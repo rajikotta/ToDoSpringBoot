@@ -25,9 +25,8 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<Void> register(@Valid @RequestBody SignupRequestDto signupRequest) {
+    public void register(@Valid @RequestBody SignupRequestDto signupRequest) {
         authService.creteAccount(signupRequest);
-        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @PostMapping("/login")
