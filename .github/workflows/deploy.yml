@@ -30,7 +30,7 @@ jobs:
         run: |
           JAR_NAME="ToDoSpringBoot-0.0.1-SNAPSHOT.jar"
           LOCAL_JAR_PATH="target/$JAR_NAME"
-          REMOTE_SERVER="admin@991.99.63.106"
+          REMOTE_SERVER="admin@91.99.63.106"
           REMOTE_JAR_DIR="/opt/tasks"
 
           rsync -avz -e "ssh" $LOCAL_JAR_PATH $REMOTE_SERVER:$REMOTE_JAR_DIR/$JAR_NAME
