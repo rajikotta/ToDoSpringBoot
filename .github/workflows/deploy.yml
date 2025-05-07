@@ -24,7 +24,7 @@ jobs:
 
       - name: Build JAR
         run: |
-          ./gradlew bootJar
+          ./mvnw clean package
 
       - name: Deploy JAR to Server
         run: |
